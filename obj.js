@@ -4,5 +4,9 @@ function Person(fname,lname){
     this.lname=lname;
 }
 
-var Person=new Person("Navdeep","Siddhu");
-console.log(Person.fname,Person.lname);
+Person.prototype.greet=function() {
+    console.log("Hello",this.fname,this.lname); 
+}
+
+var nav=new Person("Navdeep","Siddhu");
+nav.greet();
