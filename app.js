@@ -1,5 +1,10 @@
-var a = 1;
-var b = 2;
-var c = a+b;
+var o1={
+    fname:"Navdeep",
+    lname:"Siddhu",
+    o2: function() {
+        console.log("Hello", this.fname, this.lname);
+    }
+}
 
-console.log(c);
+o1.o2();
+console.log("Hii",o1['fname']);
